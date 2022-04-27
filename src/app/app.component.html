@@ -1,1 +1,65 @@
-<h1>Demo Ngx-basic-carousel package</h1>
+<div id="demo">
+  <div class="demo-container">
+    <section class="carousel-section">
+      <lib-ngx-basic-carousel [slides]="slides"
+                              [interval]="interval"
+                              [width]="width"
+                              [height]="height"
+                              [showDots]="showDots"
+                              [activeDotColor]="activeDot"
+                              [inactiveDotColor]="inactiveDot"></lib-ngx-basic-carousel>
+    </section>
+
+    <section class="configuration-section">
+      <div class="input-container">
+        <label for="interval"> Interval (milliseconds) : </label>
+        <input
+          type="number"
+          name="interval"
+          id="interval"
+          [(ngModel)]="interval"
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="width"> Width (px) : </label>
+        <input type="text" name="width" id="width" [(ngModel)]="width" />
+      </div>
+
+      <div class="input-container">
+        <label for="height"> Height (px) : </label>
+        <input type="text" name="height" id="height" [(ngModel)]="height" />
+      </div>
+
+      <div class="input-container">
+        <label for="showDots"> ShowDots : </label>
+        <input
+          type="checkbox"
+          name="showDots"
+          id="showDots"
+          [(ngModel)]="showDots"
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="activeDot"> ActiveDotColor: </label>
+        <input
+          type="text"
+          name="activeDot"
+          id="activeDot"
+          [(ngModel)]="activeDot"
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="inactiveDot"> InactiveDotColor : </label>
+        <input
+          type="text"
+          name="inactiveDot"
+          id="inactiveDot"
+          [(ngModel)]="inactiveDot"
+        />
+      </div>
+    </section>
+  </div>
+</div>
